@@ -3,17 +3,17 @@
  * Offers to quit or restart
  * @TylerTucker
 */
+public class CoinFlip extends BaseNumber {
 
-import java.util.Random;
-
-public class CoinFlip {
+	public CoinFlip(int num) {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	public String Result() {
 		
-    Random rand = new Random();
-
-    int n = rand.nextInt(2);
-
+    BaseNumber range = new BaseNumber();
+    int n = range.rand(2);
     String output = "default error";
 
     switch(n)
@@ -33,31 +33,7 @@ public class CoinFlip {
  	String result = "Coin Flip: " + output;
 	return result;
 	}
+
+	
 }
 	
-
-/* Alternate Option
-
-import java.util.Random;
-
-public class CoinFlip {
-
-	public static void main(String[] args) {
-		
-    Random rand = new Random();
-
-    int n = rand.nextInt(99);
-
-    String output = "error";
-
-    if (n >= 0 && n < 50) {
-      output = "Heads";
-    }
-    else {
-      output = "Tails";
-    }
-
-		System.out.print("Coin Flip: " + output);
-	}
-}
-*/

@@ -39,7 +39,7 @@ public class Menu {
 				//store user input as index
 				
 				if (array[option] == 1) {
-					CoinFlip coinflip = new CoinFlip();
+					CoinFlip coinflip = new CoinFlip(option);
 					System.out.println("" + coinflip.Result());
 				}
 				if (array[option] == 2) {

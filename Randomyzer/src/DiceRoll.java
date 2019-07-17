@@ -2,15 +2,13 @@
  * @TylerTucker
 */
 
-import java.util.Random;
 
-public class DiceRoll {
+public class DiceRoll extends BaseNumber{
 
 	public String Result() {
 		
-    Random rand = new Random();
-
-    int n = rand.nextInt(6);
+		BaseNumber range = new BaseNumber();
+	    int n = range.rand(6);
 
     n += 1;
 		

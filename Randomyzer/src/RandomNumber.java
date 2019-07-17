@@ -4,9 +4,9 @@
  * @TylerTucker
 */
 
-import java.util.Random;
 
-public class RandomNumber {
+
+public class RandomNumber extends BaseNumber{
 
 	public String Result() {
 		
@@ -21,9 +21,9 @@ public class RandomNumber {
 		
 		// int random_number_output;
 
-    Random rand = new Random();
+	BaseNumber range = new BaseNumber();
 
-    int n = rand.nextInt(99);
+    int n = range.rand(100);
 
     n += 1;
 		
