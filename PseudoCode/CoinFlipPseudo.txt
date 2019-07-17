@@ -4,8 +4,6 @@
 *  returns for use in main class
 */
 
-
-
 Range = New BaseNumber
 // call in BaseNumber class to use
 
