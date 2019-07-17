@@ -1,0 +1,29 @@
+/* Coin flip pseudo code
+*  coin flip class: takes in the BaseNumber class to get a random number.
+*  takes 2 numbers. 0 is heads, 1 is tails. basic error handling
+*  returns for use in main class
+*/
+
+
+
+Range = New BaseNumber
+// call in BaseNumber class to use
+
+n = range.random(2)
+// create a random number from parent class
+
+output = "default error"
+// default error creation
+
+Switch (n) {
+     Case 0: output = "heads"
+      Case 1: output = "tails"
+       Default: "random error"
+}
+// Switch case for heads, tails, and error
+
+Result = "coin flip" + output
+// Create result variable
+
+Return result
+// Return to parent class for use
