@@ -1,7 +1,6 @@
 /* Takes numbers 0-1 and assigns heads or tails to it
  * Prints out the info to the user
  * Offers to quit or restart
- * @TylerTucker
 */
 public class CoinFlip extends BaseNumber {
 
