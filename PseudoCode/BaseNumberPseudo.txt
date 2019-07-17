@@ -1,0 +1,46 @@
+/* BaseNumber: Parent class for the other classes needing a random number
+/*
+
+import java.util.Random
+// Imports random class
+
+ 	class BaseNumber
+  // opens class
+ 		
+	static protected int range = 1
+  
+	static protected int num = 1
+  
+	Random rand = new Random()
+  // gets an instance of random number class
+
+	/*Constructor for GeometricObject class with Arguments*/
+	
+	public BaseNumber()
+		
+	    int num = rand.nextInt(range)
+      // random number parameter
+      
+	    BaseNumber.num = num
+	    
+	public int rand(int range)
+	
+	BaseNumber.range = range
+  
+	int num = rand.nextInt(range)
+  
+    return num
+	
+	public void SetRange(int range)
+    // range setting parameters
+    
+		BaseNumber.range = range
+    // BaseNumber range parameter
+	
+	/*Method to output color and filled values to console*/
+  
+	public String Output()
+    // Sets up output method
+  
+			return Integer.toString(num)
+      // returns num to String
