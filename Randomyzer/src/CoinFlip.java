@@ -2,6 +2,7 @@
  * Prints out the info to the user
  * Offers to quit or restart
 */
+
 public class CoinFlip extends BaseNumber {
 
 	public CoinFlip(int num) {
