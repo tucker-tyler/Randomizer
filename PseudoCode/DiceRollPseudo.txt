@@ -1,0 +1,17 @@
+/* Takes numbers 1-6 and prints it out. Just like a dice roll.
+*/
+
+public class DiceRoll extends BaseNumber
+// Takes in BaseNumber parent class to extend
+
+		BaseNumber range = new BaseNumber()
+    // takes in parent class
+    
+	    int n = range.rand(6)
+      // creates random integer from parent class
+
+    n += 1
+    // Adds a number to the result
+		
+		return "Your Dice Roll is: " + n
+    // returns dice roll result to main class
