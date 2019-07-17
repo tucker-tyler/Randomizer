@@ -1,7 +1,6 @@
 /* Creates a menu
  * Prints out the info to the user
  * 
- * @TylerTucker
 */
 import java.util.*;
 
