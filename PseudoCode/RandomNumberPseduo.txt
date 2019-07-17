@@ -1,0 +1,15 @@
+/* RandomNumber: Extends parent class BaseNumber
+*  Takes a random number 1-100 and returns it to the user
+*/
+
+public class RandomNumber extends BaseNumber
+// Extend parent BaseNumber
+
+	BaseNumber range = new BaseNumber()
+  // Instance of BaseNumber named range
+
+    int n = range.rand(100)
+    // Random number 1-100 integer
+		
+		return "Your random number is: " + n
+    // Returns random number for later use
