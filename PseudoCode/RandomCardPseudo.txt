@@ -1,0 +1,25 @@
+/*
+ * RandomCard class
+ * Creates a random card based on different suits and numbers from arrays and random numbers
+ * Returns it to the main class
+ */
+
+ public class RandomCard extends BaseNumber {
+ // RandomCard created to extend parent BaseNumber
+    
+        String suits[] = "Hearts", "Diamonds", "Clubs", "Spades"
+        // Array for suits possible in a standard deck
+        
+        String cards[] = "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                          "Jack", "Queen", "King", "Ace"
+        // Array for numbers and royalty names in a standard deck
+                          
+        BaseNumber range = new BaseNumber()
+        // New parent class instance for card suit
+        
+        BaseNumber range2 = new BaseNumber()
+        // New parent class instance for card number/name
+        
+       return cards [range.rand(13)] + suits[range2.rand(4)]
+       // random number for suit and number combo
+       // returned for later use
