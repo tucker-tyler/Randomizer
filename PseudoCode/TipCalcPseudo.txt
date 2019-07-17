@@ -1,0 +1,43 @@
+/* TipCalc Class:
+ * Takes the input of what percent tip and what the bill costs
+ * returns the info to the user
+*/
+
+import java.util.Scanner
+// Import scanner for user input
+
+public class TipCalc
+// TipCalc class, not extending any parent
+		
+		double tipamount
+    // double for tip amount
+		
+		double totalamount
+    // total amount declared as double
+		
+		Scanner input = new Scanner
+    // new Scanner instance
+        
+		System.out.print("Please enter the meal amount ")
+    // Prints to prompt for meal amount
+				
+				double mealamount = input.nextDouble()
+        // double for meal amount input
+				
+		System.out.print("Please enter the tip percentage ")
+        // prints to prompt for tip %
+				
+				double tippercentage = input.nextDouble()
+        // tip % double from input
+				
+				double tipadjusted = tippercentage / 100
+        // double tip adjusted: percentage divided by 100 to use in equation easily
+				
+		tipamount = mealamount * tipadjusted
+    // equation for calculating the total cost of the tip
+		
+		totalamount = mealamount + tipamount
+    // equation for calculating the total cost of the meal
+    
+		return "Tip:" + tipamount + total + totalamount
+    // returns the tip amount, total amount, and total meal amount
