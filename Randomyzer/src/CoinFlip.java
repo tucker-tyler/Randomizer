@@ -3,6 +3,7 @@
  * Offers to quit or restart
 */
 
+// extend base number class
 public class CoinFlip extends BaseNumber {
 
 	public CoinFlip(int num) {
@@ -11,11 +12,13 @@ public class CoinFlip extends BaseNumber {
 	}
 
 	public String Result() {
-		
+	
+/* uses the range variable, creates instance */
     BaseNumber range = new BaseNumber();
     int n = range.rand(2);
     String output = "default error";
 
+/* switch (random number): case 0 = heads, case 1 = tails */
     switch(n)
 {
    case 0 :
@@ -29,7 +32,7 @@ public class CoinFlip extends BaseNumber {
    default : 
       output = "Random Error";
 }
-
+// return coin flip result
  	String result = "Coin Flip: " + output;
 	return result;
 	}
