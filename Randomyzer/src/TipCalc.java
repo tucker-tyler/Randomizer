@@ -1,6 +1,6 @@
 /* Takes the input of what percent tip and what the bill costs
- * Prints out the info to the user
- * Offers to quit or restart
+ // Prints out the info to the user
+ // Offers to quit or restart
 */
 
 // import scanner
