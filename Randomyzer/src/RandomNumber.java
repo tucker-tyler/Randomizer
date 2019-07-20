@@ -1,10 +1,9 @@
 /* Takes in parameters for numbers to find a random number between
  * Finds the random number and prints it to the user
  * Offers the option to quit back to the menu or try again
- * @TylerTucker
 */
 
-
+// extend base number
 
 public class RandomNumber extends BaseNumber{
 
