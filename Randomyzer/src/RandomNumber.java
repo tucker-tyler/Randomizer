@@ -21,12 +21,16 @@ public class RandomNumber extends BaseNumber{
 		
 		// int random_number_output;
 
+// object instance for range
+
 	BaseNumber range = new BaseNumber();
 
+// random number 1-100
     int n = range.rand(100);
 
     n += 1;
-		
+
+// return random number
 		return "Your random number is: " + n;
 	}
 }
