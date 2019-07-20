@@ -1,8 +1,11 @@
+// imports java random class
+
 import java.util.Random;
 
-
+// establishes parent class
  	class BaseNumber {
- 		
+ 	
+// set up variables for use
 	static protected int range = 1;
 	static protected int num = 1;
 	Random rand = new Random();
@@ -12,10 +15,12 @@ import java.util.Random;
 	public BaseNumber()
 	{
 		
-	    int num = rand.nextInt(range);
+	// establishes range variable
+       int num = rand.nextInt(range);
 	    BaseNumber.num = num;
 	    
 	}
+// range object creation
 	public int rand(int range)
 	{
 	BaseNumber.range = range;
@@ -23,7 +28,6 @@ import java.util.Random;
     return num;
     
 	}
-	
 	public void SetRange(int range) {
 		BaseNumber.range = range;
 	}
