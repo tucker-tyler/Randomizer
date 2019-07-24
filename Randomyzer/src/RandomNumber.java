@@ -1,3 +1,8 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
 /* Takes in parameters for numbers to find a random number between
  * Finds the random number and prints it to the user
  * Offers the option to quit back to the menu or try again
@@ -29,7 +34,31 @@ public class RandomNumber extends BaseNumber{
 
     n += 1;
 
-// return random number
-		return "Your random number is: " + n;
+    // write result to file with try and catch
+    PrintWriter writer1;
+	try {
+		writer1 = new PrintWriter("output.txt");
+		writer1.println("Your random number is: " + n);
+	  	writer1.close();
+	} catch (FileNotFoundException e) {
+		System.out.println("error");
+	}
+	//Read result from file with try and catch    	
+	File file = 
+		      new File("output.txt"); 
+	String result = null;
+	try {
+		Scanner scanner = new Scanner(file);
+		while (scanner.hasNextLine()) 
+		result = scanner.nextLine(); 
+		scanner.close();
+	} catch (FileNotFoundException e1) {
+		System.out.println("file not found");
+	} 
+    
+    
+    
+// return random number result
+		return result;
 	}
 }

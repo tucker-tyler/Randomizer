@@ -9,7 +9,7 @@ public class Menu {
   public static void main(String[] args) {
 	  
 	  boolean continueInput = true;
-	  int[] array = new int[6];
+	  int[] array = new int[5];
 	  int i = 0;
 	  for (i = 0; i < array.length; i++) {
 			array[i] = i + 1;
@@ -20,9 +20,8 @@ public class Menu {
 		        "  1) Flip a coin\n" +
 		        "  2) Roll a dice\n" +
 		        "  3) Get a number 1-100 \n" +
-		        "  4) Tip Calculator\n" +
-		        "  5) Random Card in a Deck\n" +
-		        "  6) Quit \n" );
+		        "  4) Random Card in a Deck\n" +
+		        "  5) Quit \n" );
 	  
 	 
 		
@@ -50,16 +49,10 @@ public class Menu {
 					System.out.println("" + randomnum.Result());
 				}
 				if (array[option] == 4) {
-					TipCalc tipcalc = new TipCalc();
-					System.out.println("" + tipcalc.Result());
-					in.close();
-					continueInput = false;
-				}
-				if (array[option] == 5) {
 					RandomCard randomcard = new RandomCard();
 					System.out.println("" + randomcard.Result());
 				}
-				if (array[option] == 6 ) {
+				if (array[option] == 5 ) {
 					
 					System.out.println("Closing");
 					in.close();

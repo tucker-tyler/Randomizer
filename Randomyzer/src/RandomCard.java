@@ -1,3 +1,8 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
 /*
  * RandomCard.java
  * -------------------
@@ -19,8 +24,28 @@
         BaseNumber range = new BaseNumber();
         BaseNumber range2 = new BaseNumber();
 
-// return cards for both
-       return cards[range.rand(13)]
-            + " of " +suits[range2.rand(4)];
+// write result to file with try and catch
+        PrintWriter writer1;
+    	try {
+    		writer1 = new PrintWriter("output.txt");
+    		writer1.println(cards[range.rand(13)] + " of " +suits[range2.rand(4)]);
+    	  	writer1.close();
+    	} catch (FileNotFoundException e) {
+    		System.out.println("error");
+    	}
+//Read result from file with try and catch       
+    	File file = 
+  		      new File("output.txt"); 
+  	String result = null;
+  	try {
+  		Scanner scanner = new Scanner(file);
+  		while (scanner.hasNextLine()) 
+  		result = scanner.nextLine(); 
+  		scanner.close();
+  	} catch (FileNotFoundException e1) {
+  		System.out.println("file not found");
+  	} 
+//return result to user  	
+       return result;
     }
 }
