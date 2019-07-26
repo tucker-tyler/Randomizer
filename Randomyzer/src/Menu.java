@@ -22,17 +22,13 @@ public class Menu {
 		        "  3) Get a number 1-100 \n" +
 		        "  4) Random Card in a Deck\n" +
 		        "  5) Quit \n" );
-	  
-	 
-		
+
 		do {
 			 Scanner in = new Scanner(System.in);
 			 int option = in.nextInt() - 1;
 			
 			//try used so that we can use the catch feature
 			try {
-				
-				
 				
 				//store user input as index
 				
@@ -80,15 +76,9 @@ public class Menu {
 				in.nextLine();
 				}
 			
-			
-			
-			
-			
-			
 		}
 		//prompt again
 		while (continueInput);
-		
 		
 	}
 }
